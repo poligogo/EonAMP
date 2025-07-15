@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EonAmp - 電動車生活管理助手</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="EonAmp.png">
+</head>
+<body>
+    <!-- 導航欄 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="EonAmp.png" alt="EonAmp Logo" class="logo-icon">
+                <span>EonAmp</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">首頁</a></li>
+                <li><a href="#features">功能</a></li>
+                <li><a href="#screenshots">介面展示</a></li>
+                <li><a href="#download">下載</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要區域 -->
+    <main>
+        <!-- 首頁區域 -->
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1>EonAmp</h1>
+                    <p class="hero-subtitle">電動車生活管理助手</p>
+                    <p class="hero-description">專業管理您的電動車充電記錄、保養資訊和駕駛統計，讓電動車生活更加便利高效。</p>
+                    <div class="hero-buttons">
+                        <a href="#download" class="btn btn-primary">
+                            <i class="fab fa-apple"></i>
+                            App Store 下載
+                        </a>
+                        <a href="#features" class="btn btn-secondary">
+                            <i class="fas fa-play"></i>
+                            了解更多
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <div class="app-preview" id="hero-phone-preview">
+                                <img src="./screenshots/dashboard.png" 
+                                     alt="EonAmp 儀表板" 
+                                     style="width: 100%; height: 100%; object-fit: cover; border-radius: 34px; background: #000;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 功能區域 -->
+        <section id="features" class="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2>強大功能</h2>
+                    <p>全方位管理您的電動車生活</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-charging-station"></i>
+                        </div>
+                        <h3>充電記錄管理</h3>
+                        <p>詳細記錄每次充電的時間、地點、費用和電量變化，幫您追蹤充電習慣和成本。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>智能統計分析</h3>
+                        <p>提供詳細的駕駛效率、充電成本和里程統計，讓您更了解愛車的使用狀況。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>保養提醒</h3>
+                        <p>智能提醒保養時間，記錄保養歷史，確保您的電動車始終保持最佳狀態。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>充電站管理</h3>
+                        <p>管理常用充電站資訊，包括位置、價格和充電功率，方便快速選擇。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3>成就系統</h3>
+                        <p>通過完成各種里程碑獲得成就徽章，讓電動車生活更有趣味性。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3>數據備份</h3>
+                        <p>支援數據匯出和匯入功能，確保您的重要資料安全無虞。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 介面展示區域 -->
+        <section id="screenshots" class="screenshots">
+            <div class="container">
+                <div class="section-header">
+                    <h2>介面展示</h2>
+                    <p>簡潔直觀的使用體驗</p>
+                </div>
+                <div class="screenshots-container">
+                    <div class="screenshot-item active" data-screen="dashboard">
+                        <div class="phone-frame">
+                            <div class="screen-content dashboard-screen" id="main-phone-screen">
+                                <img src="./screenshots/dashboard.png" 
+                                     alt="EonAmp 儀表板" 
+                                     style="width: 100%; height: 100%; object-fit: cover; border-radius: 34px; background: #000;">
+                            </div>
+                        </div>
+                        <div class="screenshot-info">
+                            <h3>儀表板</h3>
+                            <p>一目了然的總覽介面，快速掌握您的電動車使用狀況、充電統計和效率表現。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="screenshot-nav">
+                    <button class="nav-btn active" data-target="dashboard">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <span>儀表板</span>
+                    </button>
+                    <button class="nav-btn" data-target="records">
+                        <i class="fas fa-list"></i>
+                        <span>記錄管理</span>
+                    </button>
+                    <button class="nav-btn" data-target="statistics">
+                        <i class="fas fa-chart-bar"></i>
+                        <span>統計分析</span>
+                    </button>
+                    <button class="nav-btn" data-target="settings">
+                        <i class="fas fa-cog"></i>
+                        <span>設定</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 下載區域 -->
+        <section id="download" class="download">
+            <div class="container">
+                <div class="download-content">
+                    <h2>立即開始您的電動車智能生活</h2>
+                    <p>免費下載 EonAmp，體驗最專業的電動車管理應用</p>
+                    <div class="download-buttons">
+                        <a href="#" class="download-btn">
+                            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on App Store">
+                        </a>
+                    </div>
+                    <div class="download-info">
+                        <div class="info-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>支援 iOS 18.5+</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-download"></i>
+                            <span>馬上下載</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>隱私保護</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 頁腳 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="EonAmp.png" alt="EonAmp Logo" class="logo-icon">
+                        <span>EonAmp</span>
+                    </div>
+                    <p>專業的電動車生活管理助手</p>
+                </div>
+                <div class="footer-section">
+                    <h4>產品</h4>
+                    <ul>
+                        <li><a href="#features">功能介紹</a></li>
+                        <li><a href="#screenshots">介面展示</a></li>
+                        <li><a href="#download">立即下載</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>支援</h4>
+                    <ul>
+                        <li><a href="#">使用說明</a></li>
+                        <li><a href="#">常見問題</a></li>
+                        <li><a href="#">聯絡我們</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>法律</h4>
+                    <ul>
+                        <li><a href="#">隱私政策</a></li>
+                        <li><a href="#">服務條款</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 202 EonAmp. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="integrate-screenshots.js"></script>
+</body>
+</html>
