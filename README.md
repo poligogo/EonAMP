@@ -1,6 +1,6 @@
 # EonAmp 靜態介紹網站
 
-這是 EonAmp 電動車生活管理助手的[[官方介紹網站](https://poligogo.github.io/EonAMP/)，用於展示應用程式的功能特色和使用介面。
+這是 EonAmp 電動車生活管理助手的[官方介紹網站](https://poligogo.github.io/EonAMP/)，用於展示應用程式的功能特色和使用介面。
 
 ## 網站特色
 
